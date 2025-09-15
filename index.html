@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roleplay Rules</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* แบนเนอร์ */
+    .banner {
+      width: 95%;
+      height: 140px; /* ปรับขนาดตามต้องการ */
+      background-image: url('img/your-image.jpg'); /* เปลี่ยนเป็น path รูปจริง */
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* เนื้อหา */
+    .content {
+      padding: 20px;
+      font-family: sans-serif;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* ปุ่ม Discord & Roblox */
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #FF6B00, #FFA500); /* ส้มเข้ม → ส้มอ่อน */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+    }
+
+    nav#sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav#sidebar li a {
+      display: block;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav#sidebar li a:hover {
+      background-color: #eee;
+    }
+    .profile-card {
+  max-width: 360px;                     /* ขนาดการ์ด */
+  width: 90%;                            /* ยืดหยุ่นหน้าจอเล็ก */
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #FF6600, #FFCC66); /* ไล่สีสดใส */
+  border-radius: 25px;                   /* มุมโค้ง */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.profile-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;               /* วงกลม */
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin-bottom: 15px;
+}
+
+.profile-card .name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-card .role {
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/your-logo.png" alt="Logo" class="logo">
+    <div class="menu-toggle">&#9776;</div> 
+  </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">🏠 หน้าแรก</a></li>
+      <li><a href="rule-doctor.html">📜 กฎหมอ</a></li>
+      <li><a href="rule-chef.html">👨‍🍳 กฎเชฟ</a></li>
+      <li><a href="rule-mechanic.html">🔧 กฎช่าง</a></li>
+      <li><a href="rule-police.html">🚔 กฎตำรวจ</a></li>
+      <li><a href="rule-city.html">🏙️ กฎภายในเมือง</a></li>
+    </ul>
+  </nav>
+
+  <!-- แบนเนอร์รูป -->
+  <div class="banner"></div>
+
+  <!-- เนื้อหา -->
+  <div class="content">
+    <p>PAKTAI CITY</p>
+    <div class="profile-container">
+  <div class="profile-card">
+    <img src="img/person1.jpg" alt="Person 1">
+    <p>[DEV 01]no name</p>
+  </div>
+  <div class="profile-card">
+    <img src="img/person2.jpg" alt="Person 2">
+    <p>[DEV 02]TOTO</p>
+  </div>
+  <div class="profile-card">
+    <img src="img/person3.jpg" alt="Person 3">
+    <p>[admin 01]</p>
+  </div>
+</div>
+    <!-- ปุ่ม -->
+    <a href="https://discord.gg/WRTbuNvC" target="_blank" class="button">เข้ากลุ่มDiscord</a>
+    <a href="https://www.roblox.com/share/g/35913498" target="_blank" class="button">เข้ากลุ่มRoblox</a>
+    <a href="https://www.roblox.com/share?code=880f8c202adba449841dc131857d5edf&type=ExperienceDetails&stamp=1757916134150" target="_blank" class="button">เข้าแมพRoblox</a>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>
